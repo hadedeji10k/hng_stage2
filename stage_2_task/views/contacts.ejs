@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>RESUME - devYusuf</title>
+    <meta name="author" content="Fly Nerd">
+    <link rel="icon" href="./img/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="center">LIST OF SUBSCRIBERS</h1>
+        
+        <ul>
+            <% contacts.forEach(function(contact) { %>
+               <li> Name:  <%= contact.name %></li>
+               <p>Message:  <%= contact.message %></p>
+            <% }); %> 
+        </ul>
+
+        <footer>
+            <p>Created by: devYusuf - Copyright @ 2021 </p>
+        </footer>
+    </body>
+</html>
+    
