@@ -57,12 +57,7 @@ const MONGO_DB = "mongodb+srv://zuri:zuri123@cluster0.wrxuq.mongodb.net/hng_task
 // const MONGO_DB = "mongodb://localhost:27017/resume";
 
 try {
-  connect(MONGO_DB, {
-      useCreateIndex: true,
-      useFindAndModify: false,
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-  });
+  connect(MONGO_DB);
   console.log(`Database connected to ${MONGO_DB}`)
   app.listen(PORT || 3000, () => {
       console.log(`Server running on port ${PORT}`);
