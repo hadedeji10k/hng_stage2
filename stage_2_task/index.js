@@ -52,9 +52,9 @@ app.get('/contacts', async function(req, res) {
 });
 
 
-const PORT = 3000;
-const MONGO_DB = "mongodb+srv://zuri:zuri123@cluster0.wrxuq.mongodb.net/hng_task2?retryWrites=true&w=majority";
-// const MONGO_DB = "mongodb://localhost:27017/resume";
+const PORT = 5000;
+// const MONGO_DB = "mongodb+srv://zuri:zuri123@cluster0.wrxuq.mongodb.net/hng_task2?retryWrites=true&w=majority";
+const MONGO_DB = "mongodb://localhost:27017/resume";
 
 try {
   connect(MONGO_DB, {
@@ -64,7 +64,7 @@ try {
       useNewUrlParser: true,
   });
   console.log(`Database connected to ${MONGO_DB}`)
-  app.listen(process.env.PORT || 3000, () => {
+  app.listen(PORT || 3000, () => {
       console.log(`Server running on port ${PORT}`);
   })
 } catch (err) {

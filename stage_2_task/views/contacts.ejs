@@ -12,13 +12,14 @@
     </head>
     <body>
         <h1 class="center">LIST OF SUBSCRIBERS</h1>
-        
-        <ul>
-            <% contacts.forEach(function(contact) { %>
-               <li> Name:  <%= contact.name %></li>
-               <p>Message:  <%= contact.message %></p>
-            <% }); %> 
-        </ul>
+        <div class="center">
+            <ul>
+                <% contacts.forEach(function(contact) { %>
+                   <li> Name:  <%= contact.name %></li>
+                   <p>Message:  <%= contact.message %></p>
+                <% }); %> 
+            </ul>
+        </div>
 
         <footer>
             <p>Created by: devYusuf - Copyright @ 2021 </p>
