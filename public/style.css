@@ -17,17 +17,15 @@ a:hover {
 }
 
 article {
-  padding: 0 1em;
+  padding:0 1em;
 }
 
-section {
+section{
   margin: 1em;
   padding: 1em;
 }
 
-header,
-main,
-footer {
+header, main, footer {
   margin: 0 auto;
 }
 
@@ -59,8 +57,7 @@ h3 {
   text-transform: uppercase;
 }
 
-h3,
-h4 {
+h3, h4 {
   font-weight: bold;
 }
 
@@ -73,23 +70,21 @@ main section:not(:last-child) {
 }
 
 .fab {
-  border: 2px solid #509e98;
+  border: 2px solid black;
   border-radius: 50%;
-  font-size: 1.7em;
+  font-size: 1.5em;
   width: 1.5em;
   height: 1.5em;
   line-height: 1.5em;
   margin: 5px;
   text-align: center;
-  border-width: medium;
 }
 
 a .fab {
-  color: #509e98;
+  color: black;
 }
 
-.course,
-.skills {
+.course, .skills {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -120,69 +115,61 @@ a .fab {
   max-width: 50%;
 }
 
-.skills .column ul,
-ul.job-description {
+.skills .column ul, ul.job-description {
   list-style-type: none;
 }
 
-.skills .column ul>li:before {
+.skills .column ul > li:before {
   content: "<>";
   padding-right: 0.5em;
   color: #c2820c;
 }
 
-.school,
-.job-title {
+.school, .job-title {
   text-transform: capitalize;
 }
 
-.school span,
-.job-title span {
+.school span, .job-title span {
   color: #c2820c;
   text-decoration: underline;
 }
 
-ul.job-description li:before {
+ul.job-description li:before{
   content: "✔";
   padding-right: 0.5em;
   color: #c2820c;
 }
 
 footer {
-  padding: 1em 1.5em;
-  background: #c2820c;
-  color: white;
-  text-align: center;
+ padding: 1em 1.5em;
+ background: #c2820c;
+ color: white;
+ text-align: center;
 }
 
 .center {
   text-align: center;
 }
 
-.white {
-  background: black;
-  color: white;
-}
-
-.name {
-  color: linear-gradient(43deg, #ecd005 0%, #664b04 49%, #926c04 100%);
-  background-color: rgb(12, 11, 11);
-  width: 60%;
-  margin: 50px auto;
-}
 
 @media only screen and (max-width: 768px) {
   .course {
     display: block;
   }
 
-  .course .title,
-  .course .descrition {
+  .course .title, .course .descrition {
     max-width: 100%;
   }
+  .white {
+    background: white;
+    color: black;
+  }
+}
 
-  .name {
-    width: 80%;
+@media only screen and (max-width: 1200px) {
+  .white {
+    background: white;
+    color: black;
   }
 }
 
@@ -199,3 +186,4 @@ footer {
     text-align: center;
   }
 }
+
